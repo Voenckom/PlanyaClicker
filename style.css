@@ -122,3 +122,12 @@ html[ioswebview] .c3htmlwrap > * {
     overflow: hidden;
     clip: rect(1px, 1px, 1px, 1px);
 }
+#layers, #canvas, body {
+    background-color: #000000 !important; /* Здесь можно поставить цвет фона твоей игры */
+}
+
+/* Скрываем загрузочный экран целиком */
+#loading-overlay {
+    display: none !important;
+    visibility: hidden !important;
+}
