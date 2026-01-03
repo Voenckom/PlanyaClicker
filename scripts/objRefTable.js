@@ -5,7 +5,8 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Text,
 		C3.Plugins.Mouse,
 		C3.Plugins.Audio,
-		C3.Plugins.Mouse.Cnds.OnObjectClicked,
+		C3.Plugins.Touch,
+		C3.Plugins.Touch.Cnds.OnTapGestureObject,
 		C3.Plugins.System.Acts.AddVar,
 		C3.Plugins.Audio.Acts.Play,
 		C3.Plugins.System.Cnds.EveryTick,
@@ -30,10 +31,10 @@ self.C3_JsPropNameTable = [
 	{автоклик: 0},
 	{ЗвукКлика: 0},
 	{pupok: 0},
-	{ТАЙНАМОЩНЫХСИСКЭ: 0},
 	{Рукинедляскуки: 0},
 	{дышимдышим: 0},
 	{rodinky: 0},
+	{Тач: 0},
 	{Деньги: 0},
 	{СилаКлика: 0},
 	{ЦенаУлучшения: 0},
@@ -56,8 +57,8 @@ self.InstanceType = {
 	автоклик: class extends self.ITextInstance {},
 	ЗвукКлика: class extends self.IInstance {},
 	pupok: class extends self.ISpriteInstance {},
-	ТАЙНАМОЩНЫХСИСКЭ: class extends self.ISpriteInstance {},
 	Рукинедляскуки: class extends self.ITextInstance {},
 	дышимдышим: class extends self.ITextInstance {},
-	rodinky: class extends self.ITextInstance {}
+	rodinky: class extends self.ITextInstance {},
+	Тач: class extends self.IInstance {}
 }
